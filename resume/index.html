@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Online Resume | Your Name</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="header">
+    <div class="container header__grid">
+      <div class="header__left">
+        <img
+          class="headshot"
+          src="headshot.jpg"
+          alt="Headshot of Your Name"
+          width="160"
+          height="160"
+        />
+      </div>
+
+      <div class="header__right">
+        <h1 class="name">Usman Motiwala</h1>
+        <p class="headline">Bachelor for Computer Informations Systems</p>
+
+        <div class="contact">
+          <a href="mailto:youremail@example.com">usmanmotiwala17@gmail.com</a>
+          <span class="dot">•</span>
+          <span class="dot">•</span>
+          <span>Richmond, Texas</span>
+        </div>
+
+        <div class="links">
+          <a href="https://www.linkedin.com/in/usman-motiwala-64260b1ba/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/usmanmotiwala17" target="_blank" rel="noreferrer">GitHub / Portfolio</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container main">
+    <section class="card">
+      <h2>Summary</h2>
+      <p>
+        I am a Computer Information Systems student at the University of Houston, graduating in Spring 2026, with a strong interest in cloud computing and scalable system design.
+      </p>
+      <p>
+        Through academic projects and hands-on experience, I have developed skills in AWS, cloud architecture fundamentals, and web technologies including HTML, CSS, and JavaScript. I enjoy building practical solutions and understanding how systems operate behind the scenes.
+      </p>
+      <p>
+        My goal is to become a Cloud Engineer, designing secure, scalable, and efficient cloud-based solutions that solve real business problems. I am actively expanding my technical knowledge and pursuing opportunities that allow me to grow in cloud infrastructure and DevOps environments.
+      </p>
+    </section>
+
+<section class="card" aria-labelledby="employment-title">
+  <div class="section-head">
+    <h2 id="employment-title">Employment History</h2>
+  </div>
+
+  <p class="muted small">Click a role to expand details.</p>
+
+  <ol class="timeline" id="timeline" aria-label="Employment timeline">
+
+    <li class="timeline__item is-active"
+        data-role="Retail Sales Consultant"
+        data-company="AT&amp;T"
+        data-dates="June 2024 – February 2025"
+        data-location="Missouri City, Texas"
+        data-bullets="Surpassed monthly sales targets using consultative techniques aligned with customer needs|Delivered product knowledge and service recommendations that improved customer satisfaction and loyalty|Collaborated in a team-driven environment and contributed to a tech-forward customer experience|Engaged in ongoing professional development to improve sales techniques and product knowledge">
+      <button class="timeline__btn" type="button">
+        <span class="timeline__title">Retail Sales Consultant • AT&amp;T</span>
+        <span class="timeline__meta">June 2024 – February 2025</span>
+      </button>
+    </li>
+
+    <!-- Company #2 (replace placeholders) -->
+    <li class="timeline__item"
+        data-role="IT Support Associate/Admnistrative Assistant"
+        data-company="Auto Selection of Houston"
+        data-dates="June 2020 - July 2020; May 2023 - July 2023"
+        data-location="Houston, Texas"
+        data-bullets="Troubleshot login and access problems for dealership systems (inventory management, CRM, and internal applications), including password resets and basic user access issues.|Managed sales, inventory, and customer transaction records using Microsoft Excel, ensuring accurate documentation and reporting|Applied customer service and negotiation skills to facilitate successful transactions|Supported dealership staff with day-to-day issues involving Windows computers, printers, scanners, and shared office equipment used for sales and financing paperwork.">
+      <button class="timeline__btn" type="button">
+        <span class="timeline__title">Administrative Assistant • Auto Selection of Houston</span>
+        <span class="timeline__meta">June 2020 - July 2020; May 2023 - July 2023</span>
+      </button>
+    </li>
+
+  </ol>
+
+  <div class="details" id="jobDetails" aria-live="polite">
+    <h3 class="details__title" id="detailsTitle">Retail Sales Consultant</h3>
+    <p class="details__meta" id="detailsMeta">AT&amp;T • June 2024 – February 2025 • Missouri City, Texas</p>
+    <ul class="details__list" id="detailsList">
+      <li>Surpassed monthly sales targets using consultative techniques aligned with customer needs</li>
+      <li>Delivered product knowledge and service recommendations that improved customer satisfaction and loyalty</li>
+      <li>Collaborated in a team-driven environment and contributed to a tech-forward customer experience</li>
+      <li>Engaged in ongoing professional development to improve sales techniques and product knowledge</li>
+    </ul>
+  </div>
+</section>
+
+<section class="card" aria-labelledby="projects-title">
+  <h2 id="projects-title">Projects</h2>
+
+  <div class="project">
+    <h3 class="h3">Online Resume Website</h3>
+    <p class="muted small">HTML • CSS • JavaScript • Amazon S3 • CloudFront • Route 53 • AWS Certificate Manager (ACM)</p>
+    <ul class="bullets">
+      <li>Designed and developed a responsive single-page resume website using separate HTML, CSS, and JavaScript files</li>
+      <li>Deployed the website using Amazon S3 static hosting</li>
+      <li>Configured Amazon CloudFront as a CDN for secure global content delivery</li>
+      <li>Registered and connected a custom domain using Amazon Route 53</li>
+      <li>Implemented HTTPS using AWS Certificate Manager (ACM)</li>
+      <li>Created DNS A Record (Alias) to route traffic to CloudFront distribution</li>
+      <li>Managed IAM users and permissions following AWS best practices</li>
+
+    </ul>
+    <p class="muted small">
+      Link: <a href="#" target="_blank" rel="noreferrer">Add your GitHub / live link here</a>
+    </p>
+  </div>
+
+</section>
+
+
+    <section class="card">
+      <h2>Education</h2>
+      <div class="two-col">
+        <div>
+          <h3 class="h3">University of Houston</h3>
+          <p class="muted">Bachelor Degree in Computer Information Systems</p>
+        </div>
+        <div class="right muted">
+          <p>Houston, Texas</p>
+          <p>(2023 - 2026) Expected Graduation: May 2026</p>
+        </div>
+      </div>
+
+      <div class="two-col">
+        <div>
+          <h3 class="h3">Wharton County Junior College</h3>
+          <p class="muted">Associate's Degree</p>
+        </div>
+        <div class="right muted">
+          <p>Sugar Land, Texas</p>
+          <p>(2021-2023)</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Skills & Certifications</h2>
+
+      <div class="grid-2">
+        <div>
+          <h3 class="h3">Skills</h3>
+          <ul class="tags">
+            <li class="tag">HTML/CSS</li>
+            <li class="tag">JavaScript</li>
+            <li class="tag">Excel</li>
+            <li class="tag">AWS</li>
+            <li class="tag">Cloud</li>
+            <li class="tag">SQL</li>
+            <li class="tag">Customer Service</li>
+            <li class="tag">Sales</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="h3">Certifications</h3>
+          <ul class="bullets">
+            <li>AWS Certified Cloud Practitioner</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer muted small">
+      <p>© <span id="year"></span> Usman Motiwala • Built with HTML/CSS/JS</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
