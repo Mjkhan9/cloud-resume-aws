@@ -3,191 +3,257 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Online Resume | Your Name</title>
+  <title>Usman Motiwala | Cloud Engineer & CIS Student</title>
+  <meta name="description" content="Usman Motiwala — Aspiring Cloud Engineer with AWS certification, cloud architecture skills, and a passion for scalable infrastructure." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
+  <!-- Ambient glow elements -->
+  <div class="ambient-glow ambient-glow--1" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow--2" aria-hidden="true"></div>
+
   <header class="header">
     <div class="container header__grid">
       <div class="header__left">
-        <img
-          class="headshot"
-          src="headshot.jpg"
-          alt="Headshot of Your Name"
-          width="160"
-          height="160"
-        />
+        <div class="headshot-wrap">
+          <img
+            class="headshot"
+            src="headshot.jpg"
+            alt="Headshot of Usman Motiwala"
+            width="170"
+            height="170"
+          />
+          <div class="headshot-ring" aria-hidden="true"></div>
+        </div>
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          Open to Opportunities
+        </div>
       </div>
 
       <div class="header__right">
+        <p class="kicker">Cloud Engineer &amp; CIS Student</p>
         <h1 class="name">Usman Motiwala</h1>
-        <p class="headline">Bachelor for Computer Informations Systems</p>
+        <p class="headline">Building secure, scalable cloud infrastructure — one service at a time.</p>
 
         <div class="contact">
-          <a href="mailto:youremail@example.com">usmanmotiwala17@gmail.com</a>
-          <span class="dot">•</span>
-          <span class="dot">•</span>
-          <span>Richmond, Texas</span>
+          <a href="mailto:usmanmotiwala17@gmail.com" class="contact__item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            usmanmotiwala17@gmail.com
+          </a>
+          <span class="divider-dot">•</span>
+          <span class="contact__item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            Richmond, Texas
+          </span>
         </div>
 
         <div class="links">
-          <a href="https://www.linkedin.com/in/usman-motiwala-64260b1ba/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="https://github.com/usmanmotiwala17" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/usman-motiwala-64260b1ba/" target="_blank" rel="noreferrer" class="btn btn--outline">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/usmanmotiwala17" target="_blank" rel="noreferrer" class="btn btn--outline">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            GitHub
+          </a>
         </div>
       </div>
     </div>
   </header>
 
   <main id="main" class="container main">
-    <section class="card">
-      <h2>Summary</h2>
+
+    <!-- SUMMARY -->
+    <section class="card card--fade-in" style="--delay: 0">
+      <div class="card__label">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+        About
+      </div>
+      <h2 class="sr-only">Summary</h2>
       <p>
-        I am a Computer Information Systems student at the University of Houston, graduating in Spring 2026, with a strong interest in cloud computing and scalable system design.
+        Computer Information Systems student at the <strong>University of Houston</strong> (graduating Spring 2026) with a focused trajectory toward cloud engineering. Certified as an <strong>AWS Cloud Practitioner</strong>, I bring hands-on experience designing and deploying cloud-native solutions on AWS — from S3-hosted static sites with CloudFront CDN delivery to IAM policy management and Route 53 DNS configuration.
       </p>
       <p>
-        Through academic projects and hands-on experience, I have developed skills in AWS, cloud architecture fundamentals, and web technologies including HTML, CSS, and JavaScript. I enjoy building practical solutions and understanding how systems operate behind the scenes.
-      </p>
-      <p>
-        My goal is to become a Cloud Engineer, designing secure, scalable, and efficient cloud-based solutions that solve real business problems. I am actively expanding my technical knowledge and pursuing opportunities that allow me to grow in cloud infrastructure and DevOps environments.
+        My goal: architect secure, cost-efficient, and highly available cloud infrastructure that solves real business problems. Currently deepening my expertise across core AWS services, Infrastructure as Code, and DevOps practices to deliver production-grade environments from day one.
       </p>
     </section>
 
-<section class="card" aria-labelledby="employment-title">
-  <div class="section-head">
-    <h2 id="employment-title">Employment History</h2>
-  </div>
+    <!-- EMPLOYMENT -->
+    <section class="card card--fade-in" style="--delay: 1" aria-labelledby="employment-title">
+      <div class="card__label">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        Experience
+      </div>
+      <h2 id="employment-title" class="sr-only">Employment History</h2>
 
-  <p class="muted small">Click a role to expand details.</p>
+      <p class="muted small">Select a role to view details.</p>
 
-  <ol class="timeline" id="timeline" aria-label="Employment timeline">
+      <ol class="timeline" id="timeline" aria-label="Employment timeline">
+        <li class="timeline__item is-active"
+            data-role="Retail Sales Consultant"
+            data-company="AT&amp;T"
+            data-dates="June 2024 – February 2025"
+            data-location="Missouri City, TX"
+            data-bullets="Exceeded monthly revenue targets by leveraging consultative selling techniques to align AT&amp;T's product ecosystem with individual customer requirements|Translated complex technical product specifications into clear, customer-friendly recommendations — improving satisfaction scores and driving repeat business|Collaborated cross-functionally in a fast-paced retail environment, contributing to team KPIs and a technology-forward customer experience|Pursued continuous professional development in wireless technology, networking fundamentals, and emerging connected-device trends">
+          <button class="timeline__btn" type="button">
+            <span class="timeline__title">Retail Sales Consultant · AT&amp;T</span>
+            <span class="timeline__meta">June 2024 – Feb 2025 · Missouri City, TX</span>
+          </button>
+        </li>
 
-    <li class="timeline__item is-active"
-        data-role="Retail Sales Consultant"
-        data-company="AT&amp;T"
-        data-dates="June 2024 – February 2025"
-        data-location="Missouri City, Texas"
-        data-bullets="Surpassed monthly sales targets using consultative techniques aligned with customer needs|Delivered product knowledge and service recommendations that improved customer satisfaction and loyalty|Collaborated in a team-driven environment and contributed to a tech-forward customer experience|Engaged in ongoing professional development to improve sales techniques and product knowledge">
-      <button class="timeline__btn" type="button">
-        <span class="timeline__title">Retail Sales Consultant • AT&amp;T</span>
-        <span class="timeline__meta">June 2024 – February 2025</span>
-      </button>
-    </li>
+        <li class="timeline__item"
+            data-role="IT Support Associate / Administrative Assistant"
+            data-company="Auto Selection of Houston"
+            data-dates="Jun 2020 – Jul 2020 · May 2023 – Jul 2023"
+            data-location="Houston, TX"
+            data-bullets="Diagnosed and resolved access and authentication issues across dealership platforms — including inventory management, CRM, and internal applications — performing password resets, permission audits, and user provisioning|Maintained accurate sales, inventory, and transaction records in Microsoft Excel, producing reports that supported data-driven decision-making|Provided first-line hardware and software support for Windows workstations, networked printers, scanners, and shared office peripherals|Applied customer-facing communication and negotiation skills to facilitate smooth transactions and improve operational workflows">
+          <button class="timeline__btn" type="button">
+            <span class="timeline__title">IT Support / Admin Assistant · Auto Selection of Houston</span>
+            <span class="timeline__meta">Jun 2020 – Jul 2020 · May 2023 – Jul 2023</span>
+          </button>
+        </li>
+      </ol>
 
-    <!-- Company #2 (replace placeholders) -->
-    <li class="timeline__item"
-        data-role="IT Support Associate/Admnistrative Assistant"
-        data-company="Auto Selection of Houston"
-        data-dates="June 2020 - July 2020; May 2023 - July 2023"
-        data-location="Houston, Texas"
-        data-bullets="Troubleshot login and access problems for dealership systems (inventory management, CRM, and internal applications), including password resets and basic user access issues.|Managed sales, inventory, and customer transaction records using Microsoft Excel, ensuring accurate documentation and reporting|Applied customer service and negotiation skills to facilitate successful transactions|Supported dealership staff with day-to-day issues involving Windows computers, printers, scanners, and shared office equipment used for sales and financing paperwork.">
-      <button class="timeline__btn" type="button">
-        <span class="timeline__title">Administrative Assistant • Auto Selection of Houston</span>
-        <span class="timeline__meta">June 2020 - July 2020; May 2023 - July 2023</span>
-      </button>
-    </li>
+      <div class="details" id="jobDetails" aria-live="polite">
+        <h3 class="details__title" id="detailsTitle">Retail Sales Consultant</h3>
+        <p class="details__meta" id="detailsMeta">AT&amp;T · June 2024 – February 2025 · Missouri City, TX</p>
+        <ul class="details__list" id="detailsList">
+          <li>Exceeded monthly revenue targets by leveraging consultative selling techniques to align AT&amp;T's product ecosystem with individual customer requirements</li>
+        </ul>
+      </div>
+    </section>
 
-  </ol>
+    <!-- PROJECTS -->
+    <section class="card card--fade-in" style="--delay: 2" aria-labelledby="projects-title">
+      <div class="card__label">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+        Projects
+      </div>
+      <h2 id="projects-title" class="sr-only">Projects</h2>
 
-  <div class="details" id="jobDetails" aria-live="polite">
-    <h3 class="details__title" id="detailsTitle">Retail Sales Consultant</h3>
-    <p class="details__meta" id="detailsMeta">AT&amp;T • June 2024 – February 2025 • Missouri City, Texas</p>
-    <ul class="details__list" id="detailsList">
-      <li>Surpassed monthly sales targets using consultative techniques aligned with customer needs</li>
-      <li>Delivered product knowledge and service recommendations that improved customer satisfaction and loyalty</li>
-      <li>Collaborated in a team-driven environment and contributed to a tech-forward customer experience</li>
-      <li>Engaged in ongoing professional development to improve sales techniques and product knowledge</li>
-    </ul>
-  </div>
-</section>
-
-<section class="card" aria-labelledby="projects-title">
-  <h2 id="projects-title">Projects</h2>
-
-  <div class="project">
-    <h3 class="h3">Online Resume Website</h3>
-    <p class="muted small">HTML • CSS • JavaScript • Amazon S3 • CloudFront • Route 53 • AWS Certificate Manager (ACM)</p>
-    <ul class="bullets">
-      <li>Designed and developed a responsive single-page resume website using separate HTML, CSS, and JavaScript files</li>
-      <li>Deployed the website using Amazon S3 static hosting</li>
-      <li>Configured Amazon CloudFront as a CDN for secure global content delivery</li>
-      <li>Registered and connected a custom domain using Amazon Route 53</li>
-      <li>Implemented HTTPS using AWS Certificate Manager (ACM)</li>
-      <li>Created DNS A Record (Alias) to route traffic to CloudFront distribution</li>
-      <li>Managed IAM users and permissions following AWS best practices</li>
-
-    </ul>
-    <p class="muted small">
-    Link: 
-<a href="https://github.com/usmanmotiwala17/cloud-resume-aws"
-   target="_blank"
-   rel="noreferrer"
-   class="project-link">
-   https://github.com/usmanmotiwala17/cloud-resume-aws/tree/main
-</a>
-
-    </p>
-  </div>
-
-</section>
-
-
-    <section class="card">
-      <h2>Education</h2>
-      <div class="two-col">
-        <div>
-          <h3 class="h3">University of Houston</h3>
-          <p class="muted">Bachelor Degree in Computer Information Systems</p>
+      <div class="project">
+        <div class="project__header">
+          <h3 class="h3">Cloud Resume — AWS Full-Stack Deployment</h3>
+          <a href="https://github.com/usmanmotiwala17/cloud-resume-aws" target="_blank" rel="noreferrer" class="btn btn--sm btn--outline">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+            View Repo
+          </a>
         </div>
-        <div class="right muted">
-          <p>Houston, Texas</p>
-          <p>(2023 - 2026) Expected Graduation: May 2026</p>
+        <div class="tech-stack">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">Amazon S3</span>
+          <span class="tech-tag">CloudFront</span>
+          <span class="tech-tag">Route 53</span>
+          <span class="tech-tag">ACM</span>
+          <span class="tech-tag">IAM</span>
+        </div>
+        <ul class="bullets">
+          <li>Architected and deployed a responsive single-page application using S3 static website hosting with versioning and lifecycle policies</li>
+          <li>Configured Amazon CloudFront as a global CDN with custom cache behaviors, origin access control (OAC), and HTTPS-only enforcement</li>
+          <li>Provisioned and validated an SSL/TLS certificate through AWS Certificate Manager (ACM) for end-to-end encryption</li>
+          <li>Managed DNS resolution via Route 53, creating alias A-records to route the custom domain to the CloudFront distribution</li>
+          <li>Applied least-privilege IAM policies and bucket policies to restrict public access while enabling CloudFront-only delivery</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="card card--fade-in" style="--delay: 3" aria-labelledby="education-title">
+      <div class="card__label">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1 4 3 6 3s6-2 6-3v-5"/></svg>
+        Education
+      </div>
+      <h2 id="education-title" class="sr-only">Education</h2>
+
+      <div class="edu-item">
+        <div class="edu-item__left">
+          <h3 class="h3">University of Houston</h3>
+          <p class="muted">B.S. in Computer Information Systems</p>
+        </div>
+        <div class="edu-item__right muted">
+          <p>Houston, TX</p>
+          <p>2023 – 2026 · Expected: May 2026</p>
         </div>
       </div>
 
-      <div class="two-col">
-        <div>
+      <div class="edu-divider"></div>
+
+      <div class="edu-item">
+        <div class="edu-item__left">
           <h3 class="h3">Wharton County Junior College</h3>
           <p class="muted">Associate's Degree</p>
         </div>
-        <div class="right muted">
-          <p>Sugar Land, Texas</p>
-          <p>(2021-2023)</p>
+        <div class="edu-item__right muted">
+          <p>Sugar Land, TX</p>
+          <p>2021 – 2023</p>
         </div>
       </div>
     </section>
 
-    <section class="card">
-      <h2>Skills & Certifications</h2>
+    <!-- SKILLS & CERTS -->
+    <section class="card card--fade-in" style="--delay: 4" aria-labelledby="skills-title">
+      <div class="card__label">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+        Skills &amp; Certifications
+      </div>
+      <h2 id="skills-title" class="sr-only">Skills & Certifications</h2>
 
-      <div class="grid-2">
+      <div class="skills-grid">
         <div>
-          <h3 class="h3">Skills</h3>
+          <h3 class="h3">Cloud &amp; Infrastructure</h3>
           <ul class="tags">
-            <li class="tag">HTML/CSS</li>
+            <li class="tag tag--cloud">AWS (S3, EC2, IAM, CloudFront, Route 53, ACM)</li>
+            <li class="tag tag--cloud">Cloud Architecture</li>
+            <li class="tag tag--cloud">Static Hosting &amp; CDN</li>
+            <li class="tag tag--cloud">DNS Management</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="h3">Development</h3>
+          <ul class="tags">
+            <li class="tag">HTML / CSS</li>
             <li class="tag">JavaScript</li>
-            <li class="tag">Excel</li>
-            <li class="tag">AWS</li>
-            <li class="tag">Cloud</li>
             <li class="tag">SQL</li>
-            <li class="tag">Customer Service</li>
-            <li class="tag">Sales</li>
+            <li class="tag">Git &amp; GitHub</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="h3">Tools &amp; Platforms</h3>
+          <ul class="tags">
+            <li class="tag">Microsoft Excel</li>
+            <li class="tag">Windows Administration</li>
+            <li class="tag">Troubleshooting &amp; Support</li>
           </ul>
         </div>
 
         <div>
           <h3 class="h3">Certifications</h3>
-          <ul class="bullets">
-            <li>AWS Certified Cloud Practitioner</li>
-          </ul>
+          <div class="cert">
+            <div class="cert__badge">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <div>
+              <p class="cert__name">AWS Certified Cloud Practitioner</p>
+              <p class="muted small">Amazon Web Services</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <footer class="footer muted small">
-      <p>© <span id="year"></span> Usman Motiwala • Built with HTML/CSS/JS</p>
+      <p>© <span id="year"></span> Usman Motiwala · Built with HTML, CSS &amp; JS — Deployed on AWS</p>
     </footer>
   </main>
 
